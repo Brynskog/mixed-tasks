@@ -12,12 +12,11 @@ function selectPeople(){
         {Name: 'Person9', Gender: 'Female', Age: 30 },
         {Name: 'Person10', Gender: 'Female', Age: 36 },
         {Name: 'Person11', Gender: 'Female', Age: 40 },
-        {Name: 'Person12', Gender: 'Female', Age: 21 },
-    ];
+        {Name: 'Person12', Gender: 'Female', Age: 21 },];
 
-    personList.forEach(function(key, value){
-        if (personList[value].Gender === 'Male' && personList[value].Age >= 30 && personList[value].Age <= 40){
-            selectedPeople.push(personList[value]);
+    personList.forEach(p => {
+        if (p.Gender === 'Male' && p.Age >= 30 && p.Age <= 40){
+            selectedPeople.push(p);
         };
     });
     console.log(selectedPeople);
